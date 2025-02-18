@@ -46,10 +46,20 @@ It’s best for low-frequency signals, but it could be improved for higher frequ
 Keeping the input small avoids distortion.
 ![WhatsApp Image 2025-02-17 at 23 28 02_78dcd81d](https://github.com/user-attachments/assets/bb97268c-68f2-467d-9d34-00487d69749c)
 
-# How It Can Be Improved
-Higher Gain: A bigger resistor could help increase gain.
-Better Frequency Response: Tweaking the transistor size or circuit layout could improve performance at higher frequencies.
-Stability: Adding feedback might make the amplifier more stable and reduce distortion.
+# inference 
+
+Higher Gain: Replacing R_D with PMOS increases output resistance, boosting voltage gain.
+
+ Better Stability: PMOS current source maintains a steady drain current, improving biasing.
+ 
+ Lower Power Consumption: Uses less voltage headroom than a large resistor.
+ 
+ Frequency Response Shift: Higher impedance increases gain-bandwidth product but introduces a dominant pole.
+ 
+
+Conclusion: The PMOS active load enhances performance, making the amplifier more efficient and suitable for high-gain applications.
+
+
 
 Prepared by: shwetha m
 Date: [17/02/2025]
